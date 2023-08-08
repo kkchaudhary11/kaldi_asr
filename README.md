@@ -24,24 +24,24 @@ Update the **kaldi path** in *path.sh*
 
 `data` folder has following structure :
 
-  ├── local          
-  │   ├── dict        
-  │   │   ├── lexicon.txt  
-  │   │   ├── nonsilence_phones.txt  
-  │   │   ├── optional_silence.txt  
-  │   │   └── silence.txt  
-  │   └── plain-text  
-  │        └── text_c1  
-  ├── test  
-  │   ├── spk2utt  
-  │   ├── text  
-  │   ├── utt2spk  
-  │   └── wav.scp  
-  └── train  
-       ├── spk2utt  
-       ├── text  
-       ├── utt2spk  
-       └── wav.scp  
+├── local          
+│   ├── dict        
+│   │   ├── lexicon.txt  
+│   │   ├── nonsilence_phones.txt  
+│   │   ├── optional_silence.txt  
+│   │   └── silence.txt  
+│   └── plain-text  
+│        └── text_c1  
+├── test  
+│   ├── spk2utt  
+│   ├── text  
+│   ├── utt2spk  
+│   └── wav.scp  
+└── train  
+     ├── spk2utt  
+     ├── text  
+     ├── utt2spk  
+     └── wav.scp  
 
 * * *
 
@@ -63,11 +63,11 @@ output : *temp/tmp.parse*
 
 update the **irstlm path** in *create_lm.sh*
 
-`./create_lm.sh`
+`$ ./create_lm.sh`
 
 4\. Train Model
 
-`./myrun.sh`
+`$ ./myrun.sh`
 
 5\. Decode/Test audio
 
