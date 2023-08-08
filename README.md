@@ -24,24 +24,24 @@ Update the **kaldi path** in *path.sh*
 
 `data` folder has following structure :
 
-├── local
-│   ├── dict
-│   │   ├── lexicon.txt
-│   │   ├── nonsilence_phones.txt
-│   │   ├── optional_silence.txt
-│   │   └── silence.txt
-│   └── plain-text
-│        └── text_c1
-├── test
-│   ├── spk2utt
-│   ├── text
-│   ├── utt2spk
-│   └── wav.scp
-└── train
-     ├── spk2utt
-     ├── text
-     ├── utt2spk
-     └── wav.scp
+  ├── local          
+  │   ├── dict        
+  │   │   ├── lexicon.txt  
+  │   │   ├── nonsilence_phones.txt  
+  │   │   ├── optional_silence.txt  
+  │   │   └── silence.txt  
+  │   └── plain-text  
+  │        └── text_c1  
+  ├── test  
+  │   ├── spk2utt  
+  │   ├── text  
+  │   ├── utt2spk  
+  │   └── wav.scp  
+  └── train  
+       ├── spk2utt  
+       ├── text  
+       ├── utt2spk  
+       └── wav.scp  
 
 * * *
 
@@ -49,26 +49,26 @@ Update the **kaldi path** in *path.sh*
 
 1\. Prepare data
 
-> `$ ./easy-kaldi.sh --train train_data_folder`
-> 
-> `$ ./easy-kaldi.sh --test test_data_folder`
+`$ ./easy-kaldi.sh --train train_data_folder`
+ 
+`$ ./easy-kaldi.sh --test test_data_folder`
 
 2\. Create lexicon
 
-> `$  ./lm-tools_2.sh file_name`
-> 
-> output : *temp/tmp.parse*
+`$  ./lm-tools_2.sh file_name`
+
+output : *temp/tmp.parse*
 
 3\. Create LM
 
 update the **irstlm path** in *create_lm.sh*
 
-> `./create_lm.sh`
+`./create_lm.sh`
 
 4\. Train Model
 
-> `./myrun.sh`
+`./myrun.sh`
 
 5\. Decode/Test audio
 
-> `$ online_speech1.sh audio_folder audio_path`
+`$ online_speech1.sh audio_folder audio_path`
