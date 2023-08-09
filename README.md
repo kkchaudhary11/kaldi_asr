@@ -37,7 +37,7 @@ Update the **kaldi path** in *path.sh*
 │   ├── text  
 │   ├── utt2spk  
 │   └── wav.scp  
-└── train       
+└── train     
      ├── spk2utt       
      ├── text  
      ├── utt2spk  
