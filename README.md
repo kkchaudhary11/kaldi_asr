@@ -55,7 +55,7 @@ Update the **kaldi path** in *path.sh*
 
 2\. Create lexicon
 
-`$  ./lm-tools_2.sh file_name`
+`$  ./lm-tools.sh file_name`
 
 output : *temp/tmp.parse*
 
